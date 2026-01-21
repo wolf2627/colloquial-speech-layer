@@ -2,7 +2,8 @@
  * Frontend Application Logic
  */
 
-const API_BASE_URL = 'http://localhost:8000';
+// API URL - uses same host as frontend, port 8000
+const API_BASE_URL = `http://${window.location.hostname}:8000`;
 
 // DOM Elements
 const modelSelect = document.getElementById('model-select');
