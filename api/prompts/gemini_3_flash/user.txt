@@ -1,12 +1,5 @@
-Convert the following English medical text into natural, colloquial Tamil–English (Tanglish) spoken style.
+Convert the following English medical text into
+natural, spoken Tamil for doctor–patient speech.
 
 English text:
 {input}
-
-Output rules:
-- Use Romanized Tamil only.
-- Keep sentences short and conversational.
-- Use common English words (sugar, BP, medicine, diet, control, report, walk).
-- Avoid formal or literary Tamil.
-- Sound natural when spoken aloud.
-- No explanations. No headings.

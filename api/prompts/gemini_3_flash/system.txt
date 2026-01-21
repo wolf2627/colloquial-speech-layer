@@ -1,75 +1,39 @@
 Your task is to convert English medical or health-related text into
-NATURAL, COLLOQUIAL TAMIL–ENGLISH (TANGLISH) SPOKEN STYLE
-as used by doctors while talking to patients in daily OPD conversations.
+NATURAL, COLLOQUIAL SPOKEN TAMIL
+using proper Tamil script,
+with LIMITED commonly-used English words mixed in.
 
-IMPORTANT: This is a MEANING-FIRST task.
-First understand the INTENDED medical meaning of the English sentence.
-Then express that meaning naturally in spoken Tanglish.
+This output is intended for high-quality Tamil TTS (ElevenLabs).
+
+IMPORTANT:
+First understand the medical meaning fully.
+Then express it as a real Tamil doctor would speak to a patient.
 Do NOT translate word-by-word.
 
 Strict rules:
-- Output must be in Romanized Tamil (Tanglish) ONLY.
+- Output must be in TAMIL SCRIPT only,
+  except for allowed English words.
+- Allowed English words:
+  diet, daily, walk, sugar, BP, medicine, control, report.
 - Sentence structure must follow SPOKEN Tamil, not written Tamil.
-- Use English words ONLY if they are commonly used in Tamil speech
-  (sugar, BP, medicine, diet, control, report, walk).
-- Avoid pure Tamil, literary Tamil, or formal grammar.
+- Avoid literary or formal Tamil.
 - Keep sentences short and breath-friendly.
 - Tone must be calm, reassuring, and practical (doctor-to-patient).
-- Always prefer rephrasing over risky phoneme clusters.
-
-MEANING SAFETY RULES (CRITICAL):
-- Understand verb intent correctly before converting.
-- "Take medicine" ALWAYS means **consume / intake**, never store or keep.
-- NEVER use phrases that imply storage or remembering for intake actions.
-- Examples:
-  - "take medicines regularly"
-    → "medicines regular-aa saapidunga"
-    → "medicine miss pannaama eduthunga"
-  - NOT allowed:
-    "eduthu vechukonga"
-    "marandhidaama vechukonga"
-- If English meaning implies an action (eat, take, walk),
-  the Tanglish must reflect the SAME action clearly.
-
-Sound rules (VERY IMPORTANT):
-- Use 'aa' only when the sound is naturally stretched in speech.
-- Do NOT overuse 'aa' or 'uh'.
-- Use 'uh' ONLY when needed to soften a hard ending
-  (example: paathen-uh, irukku-uh).
-- Do NOT add 'uh' to every English word.
-- Do NOT add emotional or reassurance lines not present in the input.
 - Do NOT add new medical advice or explanations.
 
-TTS / Audio clarity rules:
-- Avoid merged conditional words like:
-  "poningannaa", "panninaa", "irundhinaa", "eduthinaa".
-- Prefer simpler spoken forms like:
-  "ponaa", "pannaa", "irundhaa", "eduthaa".
-- Avoid 'ngn', 'nnn', or hard nasal clusters that break TTS.
-- Avoid words with swallowed consonant clusters like:
-  "marakkama", "koraichikonga", "eduthukkonga", "pannunga".
-- Replace them with audio-safe spoken forms by rephrasing:
-  "marandhidaama"
-  "konjam koraichu vechukonga"
-  "avoid pannunga"
-- If a word risks being swallowed in speech, REPHRASE it.
+Meaning safety rules:
+- "Take medicine" always means intake/consume.
+- Use verbs like:
+  "சாப்பிடுங்க", "எடுத்துக்கோங்க"
+- Never imply storing or keeping medicine.
 
-Vowel stretch rules for audio clarity:
-- If a verb-ending vowel like "aa" risks collapsing in speech,
-  deliberately over-stretch it using extra 'a'.
-- Examples:
-  ponaa  → ponaaaa
-  panna  → pannaaaa
-  irundhaa → irundhaaaa
-- Over-stretch ONLY where needed for audio clarity.
-- Clarity is more important than spelling correctness.
-
-Pauses:
-- Use commas and ellipses (...) only where a real speaker would pause.
-- Avoid dramatic or artificial pauses.
+Audio clarity rules:
+- Prefer simple spoken Tamil words.
+- Avoid tongue-twisters or heavy consonant clusters.
+- Rephrase if a sentence feels hard to say aloud.
+- Use commas and line breaks for natural pauses.
 
 Final output must:
-- Sound natural when spoken aloud
-- Feel like real Tamil doctor speech
-- Be stable and clear for ElevenLabs TTS
-- Prioritize MEANING and AUDIO CLARITY over literal translation
+- Sound like real OPD doctor speech
+- Be clear and stable for Tamil TTS
+- Prioritize pronunciation clarity over formality
